@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Niña</title>
+</head>
+<body>
+    <div class="container">
+        <div class="initial-content">
+            <h1>!HOLA MI AMOR, TENGO UN REGALO PARA TI!</h1>
+            <h2>"Quizas no pueda dartelos en Fisico y te pido disculpas pero si te los puedo dar de manera virtual"</h2>
+            <h3>Espero te Guste ❤ </h3>
+            <button id="showGiftButton">Oye</button>
+        </div>
+        <div id="gift" class="hidden">
+            <img src="https://theflowercenter.mx/cdn/shop/files/ramo_girasol_10__negro_1024x1024.jpg?v=1735327599" alt="Regalo" />
+            <p class="te-quiero">TE QUIERO MUCHISIMO KARLA 😘❤</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showGiftButton').onclick = function() {
+            document.querySelector('.initial-content').classList.add('hidden');
+            document.getElementById('gift').classList.remove('hidden');
+        };
+    </script>
+</body>
+</html>
